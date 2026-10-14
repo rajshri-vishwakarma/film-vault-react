@@ -1,3 +1,4 @@
+
 # Logs
 logs
 *.log
@@ -6,22 +7,44 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-node_modules
-dist
-dist-ssr
+# Dependencies and build
+node_modules/
+dist/
+dist-ssr/
+build/Release/
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
+.vite/
+.next/
+out/
+.nuxt/
+.svelte-kit/
+web_modules/
+jspm_packages/
+
+# Environment variables - keep API keys private
+.env
+.env.*
+!.env.example
+
+# Local files
 *.local
+.DS_Store
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
 
-# Editor directories and files
+# Editor files
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env
-.env.*
-!.env.example
